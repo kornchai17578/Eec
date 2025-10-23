@@ -1,0 +1,115 @@
+.footer {
+    background: #F6F7F9;
+}
+
+/* ใช้ grid-area เพื่อจัด 3 คอลัมน์และ reflow บนอุปกรณ์เล็ก */
+.inner {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    padding: 24px 56px;
+    display: grid;
+    grid-template-areas: "logos desc links";
+    grid-template-columns: minmax(140px, 170px) 1.4fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+/* 1024↓ → 2 คอลัมน์: โลโก้คอลัมน์ซ้าย คอนเทนต์/ลิงก์อยู่ขวา */
+@media (max-width: 1024px) {
+    .inner {
+        padding: 20px 32px;
+        grid-template-columns: minmax(140px, 170px) 1fr;
+        grid-template-areas:
+            "logos desc"
+            "logos links";
+        gap: 24px;
+    }
+}
+
+/* 640↓ → 1 คอลัมน์ซ้อนกัน */
+@media (max-width: 640px) {
+    .inner {
+        padding: 16px 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logos"
+            "desc"
+            "links";
+        gap: 18px;
+    }
+}
+
+/* คอลัมน์ */
+.col1 {
+    grid-area: logos;
+}
+
+.col2 {
+    grid-area: desc;
+}
+
+.col3 {
+    grid-area: links;
+}
+
+/* โลโก้ */
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logos :global(img) {
+    height: auto;
+    max-height: 48px;
+    width: auto;
+}
+
+/* หัวข้อกลุ่มลิงก์ — หนา 600, max 16px */
+.title {
+    margin: 0 0 10px;
+    color: #1173A9;
+    font-weight: 600;
+    font-size: 16px;
+    /* เพดาน 16px */
+    line-height: 1.4;
+}
+
+/* ย่อหน้าเด่นกลาง — หนา 600, max 16px */
+.lead {
+    margin: 6px 0 12px;
+    color: #1173A9;
+    font-weight: 600;
+    font-size: clamp(14px, 1.6vw, 16px);
+    line-height: 1.5;
+}
+
+/* ข้อความทั่วไป/ติดต่อ — บาง 300, max 16px */
+.contact p {
+    margin: 0 0 6px;
+    color: #565C6E;
+    font-weight: 300;
+    font-size: clamp(12px, 1.5vw, 16px);
+    line-height: 1.5;
+}
+
+/* ลิงก์ — บาง 300, max 16px */
+.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #1173A9;
+    font-weight: 300;
+    font-size: clamp(12px, 1.5vw, 16px);
+    line-height: 1.45;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

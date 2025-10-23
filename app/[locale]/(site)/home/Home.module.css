@@ -1,0 +1,195 @@
+.hero {
+    --heroH: clamp(420px, 48vw, 700px);
+}
+
+/* ซ้าย: ใช้ background-image เป็นพื้นหลัง */
+.heroBg {
+    position: relative;
+    height: var(--heroH);
+    background-image: url("/images/hero.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* กล่องข้อความซ้อนหน้า */
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    /* อยากให้กึ่งกลางเปลี่ยนเป็น center ได้ */
+    justify-content: flex-start;
+    padding: clamp(16px, 3.6vw, 48px);
+}
+
+/* สไตล์ข้อความตามที่กำหนด (ทำ responsive เล็กน้อย) */
+.heroTitle {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(18px, 2vw, 40px);
+    line-height: 1.3;
+    margin: 0;
+    max-width: 40ch;
+    /* กันบรรทัดยาวเกิน ปรับ/เอาออกได้ */
+}
+
+/* ขวา: ปุ่มเท่ากัน */
+.sideCol {
+    height: var(--heroH);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    padding: clamp(16px, 3.6vw, 47px) clamp(14px, 3.2vw, 44px);
+    font-size: clamp(14px, 1.7vw, 32px);
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+}
+
+.panel .icon {
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 160ms ease, transform 160ms ease;
+    display: inline-block;
+    /* กัน layout shift */
+}
+
+/* โชว์เมื่อ hover/focus ที่ลิงก์ */
+.panel:hover .icon,
+.panel:focus-visible .icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.panelBrand {
+    background: #1173A9;
+    color: #fff;
+}
+
+.panelBrand:hover {
+    background: #2990C9;
+    color: #fff;
+}
+
+.panelLight {
+    background: #fff;
+    color: #1173A9;
+}
+
+.panelLight:hover {
+    background: #E2EEF5;
+    color: #1173A9;
+}
+
+.contentRow {
+    padding: clamp(16px, 4vw, 48px) 0;
+}
+
+/* head: ไอคอน + ชื่อหัวข้อชิดบรรทัดเดียว */
+.contentHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.contentIcon {
+    width: clamp(20px, 2.2vw, 28px);
+    height: clamp(20px, 2.2vw, 28px);
+    object-fit: contain;
+}
+
+/* ชื่อหัวข้อตามสเปกสี/ขนาดในภาพ */
+.TitleContent {
+    color: #1173A9;
+    font-size: clamp(22px, 2.2vw, 40px);
+    font-style: normal;
+    font-weight: 700;
+    /* เน้นให้ชัดแบบในภาพ */
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* เนื้อหาอ่านสบายเหมือนในภาพ */
+.Content {
+    color: #565C6E;
+    font-size: clamp(14px, 1.2vw, 16px);
+    line-height: 1.4;
+    padding-left: 1rem;
+}
+
+.Content .num,
+.Content b,
+.Content strong {
+    font-weight: 700;
+    color: #565C6E;
+    /* คุมสีให้ตรงกัน */
+}
+
+/* รายการ bullet ให้แสดงจุด และกำหนดสีจุด */
+.Content ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 10px 0 0;
+}
+
+.Content li {
+    color: #565C6E;
+    margin-bottom: 6px;
+}
+
+.Content li::marker {
+    color: #565C6E;
+}
+
+/* รูปขวา: อัตราส่วนคงที่ + ครอบเต็มความกว้างคอลัมน์ */
+.aboutImageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutImg {
+    width: 100%;
+    max-width: 550px;
+    object-fit: cover;
+}
+
+.numList {
+    list-style: decimal;
+    /* ใช้เลขอัตโนมัติ */
+    padding-left: 1.25rem;
+    /* ระยะย่อหน้า */
+    margin: 10px 0 0;
+}
+
+
+/* มือถือ: ปล่อยความสูงอัตโนมัติ */
+@media (max-width: 767.9px) {
+    .about {
+        padding: 24px 0;
+    }
+
+    .heroBg {
+        height: clamp(260px, 60vw, 420px);
+    }
+
+    .sideCol {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel {
+        min-height: clamp(80px, 22vw, 160px);
+    }
+}
