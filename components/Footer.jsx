@@ -1,16 +1,11 @@
-// app/components/footer.js (ตัวอย่างไฟล์)
-// Server Component (ไม่มี "use client")
+// app/components/Footer.js
+// ✅ Server Component (ไม่มี "use client")
 
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/Footer.module.css";
-import { getLocale } from "next-intl/server";
 
-export default async function Footer() {
-  const locale = await getLocale(); // "en" | "th"
-  const withLocale = (path) =>
-    `/${locale}${path.startsWith("/") ? path : `/${path}`}`;
-
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
@@ -39,35 +34,29 @@ export default async function Footer() {
           </div>
         </div>
 
-        {/* 3) เมนูลิงก์ (locale-aware) */}
+        {/* 3) เมนูลิงก์ (ไม่ต้อง locale-aware) */}
         <nav className={styles.col3} aria-label="Footer">
           <h2 className={styles.title}>แนวทางเคมียั่งยืน</h2>
           <ul className={styles.links}>
             <li>
-              <Link href={withLocale("/chemical-use-situation")}>
-                สถานการณ์การใช้สารเคมี
-              </Link>
+              <Link href="/chemical-use-situation">สถานการณ์การใช้สารเคมี</Link>
             </li>
             <li>
-              <Link href={withLocale("/sustainable-chemistry-guidelines")}>
+              <Link href="/sustainable-chemistry-guidelines">
                 แนวทางเคมียั่งยืน
               </Link>
             </li>
             <li>
-              <Link href={withLocale("/case-studies")}>กรณีตัวอย่าง</Link>
+              <Link href="/case-studies">กรณีตัวอย่าง</Link>
             </li>
             <li>
-              <Link href={withLocale("/related-technologies")}>
-                เทคโนโลยีที่เกี่ยวข้อง
-              </Link>
+              <Link href="/related-technologies">เทคโนโลยีที่เกี่ยวข้อง</Link>
             </li>
             <li>
-              <Link href={withLocale("/local-network-info")}>
-                ข้อมูลเครือข่ายในพื้นที่
-              </Link>
+              <Link href="/local-network-info">ข้อมูลเครือข่ายในพื้นที่</Link>
             </li>
             <li>
-              <Link href={withLocale("/safety-inspection-guide")}>
+              <Link href="/safety-inspection-guide">
                 คู่มือการตรวจสอบและมาตรการความปลอดภัย
               </Link>
             </li>
