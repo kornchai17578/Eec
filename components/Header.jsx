@@ -106,6 +106,16 @@ export default function Header() {
               คู่มือการตรวจสอบและมาตรการความปลอดภัย
             </Link>
           </li>
+          <li>
+            <Link
+              href="/about-us"
+              className={`${styles.nav__link} ${
+                isActive("/about-us") ? styles.isActive : ""
+              }`}
+            >
+              เกี่ยวกับเรา
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

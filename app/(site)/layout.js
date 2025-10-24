@@ -6,7 +6,7 @@ export default function SiteLayout({ children }) {
   return (
     <>
       <Header />
-      <main className="min-h-[100vh]">{children}</main>
+      <main className="min-h-[60%]">{children}</main>
       <Footer />
     </>
   );

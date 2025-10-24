@@ -5,6 +5,7 @@ import ChemicalLeakChart from "./components/ChemicalLeakChart";
 import Top10HazardChart from "./components/Top10HazardChart";
 import Top10HazardExportChart from "./components/Top10HazardExportChart";
 import Top10ProvinceChart from "./components/Top10ProvinceChart";
+import Titile from "@/components/Titile";
 
 export default function ChemicalUseSituation() {
   const dataLeft = [
@@ -35,15 +36,7 @@ export default function ChemicalUseSituation() {
   return (
     <div className="gradient-bg">
       <div className="container mx-auto px-6 py-4">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-[#565C6E] mb-4">
-          สถานการณ์การใช้สารเคมี /{" "}
-          <span className="font-semibold">สถานการณ์การใช้สารเคมี</span>
-        </nav>
-
-        <div className="text-center mb-4">
-          <h2 className="TitleContent">สถานการณ์การใช้สารเคมี</h2>
-        </div>
+        <Titile title="สถานการณ์การใช้สารเคมี" />
 
         {/* Title */}
         <div className="contentHeader">

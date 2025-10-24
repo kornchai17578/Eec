@@ -1,0 +1,29 @@
+/* Dowmload */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: 1px solid #1173A9;
+    padding: 8px 12px;
+
+    color: #1173A9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #E6F3FA;
+    /* ฟ้าจางตอน hover */
+}
+
+.icon {
+    display: inline-block;
+}

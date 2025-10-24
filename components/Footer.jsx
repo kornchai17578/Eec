@@ -60,6 +60,11 @@ export default function Footer() {
                 คู่มือการตรวจสอบและมาตรการความปลอดภัย
               </Link>
             </li>
+            <li>
+              <Link href="/about-us">
+              เกี่ยวกับเรา
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

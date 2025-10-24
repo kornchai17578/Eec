@@ -237,7 +237,7 @@ body {
   background: linear-gradient(
     180deg,
     #DFEFFD 0%,
-    white 10%,
+    white 100px,
     white 100%
   );
 }
