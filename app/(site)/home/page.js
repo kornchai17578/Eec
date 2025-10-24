@@ -87,16 +87,16 @@ export default function Home() {
         align="middle"
       >
         <Col span={20} md={20} lg={10}>
-          <div className={styles.contentHeader}>
+          <div className="contentHeader">
             <img
               src="/icons/hourglass.svg"
               alt="hourglass"
-              className={styles.contentIcon}
+              className="contentIcon"
             />
-            <h2 className={styles.TitleContent}>ความเป็นมา</h2>
+            <h2 className="TitleContent">ความเป็นมา</h2>
           </div>
 
-          <div className={styles.Content}>
+          <div className="Content">
             <p>
               โรงงานอุตสาหกรรมในพื้นที่เขตเศรษฐกิจพิเศษภาคตะวันออก (Eastern
               Economic Corridor: EEC) มีจํานวน 10,246 โรงงาน
@@ -110,13 +110,13 @@ export default function Home() {
               รวม 391 โรงงาน อยู่ใน
             </p>
             <p>
-              จังหวัดฉะเชิงเทรา จํานวน <span className={styles.num}>67</span>{" "} โรงงาน <br/> 
-              จังหวัดชลบุรี จํานวน{" "}<span className={styles.num}>199</span> โรงงาน <br/>
-              และจังหวัดระยอง จํานวน <span className={styles.num}> 125 </span> โรงงาน <br/>
+              จังหวัดฉะเชิงเทรา จํานวน <span className="num">67</span>{" "} โรงงาน <br/> 
+              จังหวัดชลบุรี จํานวน{" "}<span className="num">199</span> โรงงาน <br/>
+              และจังหวัดระยอง จํานวน <span className="num"> 125 </span> โรงงาน <br/>
             </p>
             <p>
-              มูลค่าเงินลงทุนรวม <span className={styles.num}>55,777</span>{" "}
-              ล้านบาท จํานวนคนงานรวม <span className={styles.num}>17,363</span>{" "}
+              มูลค่าเงินลงทุนรวม <span className="num">55,777</span>{" "}
+              ล้านบาท จํานวนคนงานรวม <span className="num">17,363</span>{" "}
               คน
             </p>
             <p>
@@ -138,11 +138,11 @@ export default function Home() {
         </Col>
 
         <Col span={20} md={20} lg={10}>
-          <div className={styles.aboutImageBox}>
+          <div className="aboutImageBox">
             <img
               src="/images/about.png"
               alt="about"
-              className={styles.aboutImg}
+              className="aboutImg"
             />
           </div>
         </Col>
@@ -160,17 +160,17 @@ export default function Home() {
           md={20}
           className="rounded md:rounded-xl bg-[#F6F7F9] p-4"
         >
-          <div className={styles.contentHeader}>
+          <div className="contentHeader">
             <img
               src="/icons/marker.svg"
               alt="marker"
-              className={styles.contentIcon}
+              className="contentIcon"
             />
-            <h2 className={styles.TitleContent}>วัตถุประสงค์</h2>
+            <h2 className="TitleContent">วัตถุประสงค์</h2>
           </div>
 
-          <div className={styles.Content}>
-            <ol className={styles.numList}>
+          <div className="Content">
+            <ol className="numList">
               <li>
                 เพื่อส่งเสริมการขับเคลื่อนการลงทุนอุตสาหกรรมที่เป็นมิตรต่อสิ่งแวดล้อมด้วยการสร้างความตระหนักในเรื่องพัฒนาการจัดการความปลอดภัยสารเคมีในกระบวนการทางเคมีและการใช้เคมีภัณฑ์อย่างยั่งยืน
                 (Sustainable Chemistry)

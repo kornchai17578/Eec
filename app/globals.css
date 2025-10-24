@@ -146,3 +146,99 @@ body {
     gap: 20px;
   }
 }
+
+/* head: ไอคอน + ชื่อหัวข้อชิดบรรทัดเดียว */
+.contentHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.contentIcon {
+  width: clamp(20px, 2.2vw, 28px);
+  height: clamp(20px, 2.2vw, 28px);
+  object-fit: contain;
+}
+
+/* ชื่อหัวข้อตามสเปกสี/ขนาดในภาพ */
+.TitleContent {
+  color: #1173A9;
+  font-size: clamp(22px, 2.2vw, 40px);
+  font-style: normal;
+  font-weight: 700;
+  /* เน้นให้ชัดแบบในภาพ */
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* เนื้อหาอ่านสบายเหมือนในภาพ */
+.Content {
+  color: #565C6E;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.4;
+  padding-left: 1rem;
+}
+
+.Content .num,
+.Content b,
+.Content strong {
+  font-weight: 700;
+  color: #565C6E;
+  /* คุมสีให้ตรงกัน */
+}
+
+/* รายการ bullet ให้แสดงจุด และกำหนดสีจุด */
+.Content ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 10px 0 0;
+}
+
+.Content li {
+  color: #565C6E;
+  margin-bottom: 6px;
+}
+
+.Content li::marker {
+  color: #565C6E;
+}
+
+/* รูปขวา: อัตราส่วนคงที่ + ครอบเต็มความกว้างคอลัมน์ */
+.aboutImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutImg {
+  width: 100%;
+  max-width: 550px;
+  object-fit: cover;
+}
+
+.numList {
+  list-style: decimal;
+  /* ใช้เลขอัตโนมัติ */
+  padding-left: 1.25rem;
+  /* ระยะย่อหน้า */
+  margin: 10px 0 0;
+}
+
+.titleH3 {
+  color: #1173A9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    180deg,
+    #DFEFFD 0%,
+    white 10%,
+    white 100%
+  );
+}
+
