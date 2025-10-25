@@ -113,15 +113,15 @@ export default function ChemicalConverter({ options = [] }) {
         />
 
         {/* Arrow between Select */}
-        <div className="flex-shrink-0 flex justify-center items-center my-2 md:my-0">
+        <div className="shrink-0 flex justify-center items-center my-2 md:my-0">
           <div
             className="rounded-full bg-[#1173A9] flex items-center justify-center"
             style={{
-              width: 24,
-              height: 24,
+              width: 40,
+              height: 40,
             }}
           >
-            <Icons name="arrow" color="#fff" />
+            <Icons name="arrow" color="#fff" size="20px" />
           </div>
         </div>
 
@@ -180,11 +180,11 @@ export default function ChemicalConverter({ options = [] }) {
             <div
               className="rounded-full bg-[#1173A9] flex items-center justify-center"
               style={{
-                width: 24,
-                height: 24,
+                width: 40,
+                height: 40,
               }}
             >
-              <Icons name="arrow" color="#fff" />
+              <Icons name="arrow" color="#fff" size="20px" />
             </div>
           </div>
 
