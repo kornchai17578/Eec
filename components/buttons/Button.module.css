@@ -20,8 +20,15 @@
 }
 
 .button:hover {
-    background-color: #E6F3FA;
-    /* ฟ้าจางตอน hover */
+    background: rgba(45, 145, 201, 0.10);
+    color: #2A93CE;
+    border: 1px solid #2A93CE;
+}
+
+.button:active {
+    border: 1px solid #055683;
+    background: rgba(5, 86, 131, 0.10);
+    color: #055683;
 }
 
 .icon {

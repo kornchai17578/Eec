@@ -5,9 +5,11 @@ import Footer from "@/components/Footer";
 export default function SiteLayout({ children }) {
   return (
     <>
-      <Header />
-      <main className="min-h-[60%]">{children}</main>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </div>
     </>
   );
 }

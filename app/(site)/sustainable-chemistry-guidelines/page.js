@@ -281,11 +281,11 @@ export default function SustainableChemistryGuidelines() {
             <GuidelineAccordion items={principles} />
           </div>
 
+          <h3 className="titleH3 mb-2">
+            1. นิยามของการทดแทนในบริบทการจัดการสารเคมีอันตราย
+          </h3>
           <div className="Content">
             <p>
-              <h3 className="titleH3 mb-2">
-                1. นิยามของการทดแทนในบริบทการจัดการสารเคมีอันตราย
-              </h3>
               การทดแทน (Substitution)
               นับเป็นมาตรการเชิงรุกที่มีความสำคัญในการลดผลกระทบจากสารและวัสดุที่เป็นอันตราย
               โดยมีบทบาทอย่างยิ่งในด้านสุขภาพและความปลอดภัยในการทำงาน

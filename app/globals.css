@@ -26,14 +26,6 @@
     -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
-/* Dark mode */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 /* ---------- Base ---------- */
 html,
 body {
@@ -234,11 +226,15 @@ body {
 }
 
 .gradient-bg {
-  background: linear-gradient(
-    180deg,
-    #DFEFFD 0%,
-    white 100px,
-    white 100%
-  );
+  background: linear-gradient(180deg,
+      #DFEFFD 0%,
+      white 100px,
+      white 100%);
 }
 
+.text-selected .ant-select-selection-item {
+  color: #1173A9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
