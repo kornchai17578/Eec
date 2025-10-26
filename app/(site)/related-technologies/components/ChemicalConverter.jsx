@@ -86,7 +86,7 @@ export default function ChemicalConverter({ options = [] }) {
       }}
     >
       {/* Select row */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2">
         {/* From */}
         <Select
           value={from}

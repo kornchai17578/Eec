@@ -18,6 +18,8 @@ import List10 from "@/data/guidelines/List10";
 import List11 from "@/data/guidelines/List11";
 import List12 from "@/data/guidelines/List12";
 import Other1 from "@/data/guidelines/Other1";
+import Other2 from "@/data/guidelines/Other2";
+import Other3 from "@/data/guidelines/Other3";
 
 export default function SustainableChemistryGuidelines() {
   const principles = [
@@ -200,6 +202,8 @@ export default function SustainableChemistryGuidelines() {
             <GuidelineAccordion items={principles} />
           </div>
           <Other1 />
+          <Other2 />
+          <Other3 />
         </section>
       </div>
     </div>

@@ -2,7 +2,6 @@ import T from "@/components/T";
 import Table from "@/components/table/table";
 
 export default function Other1() {
-
   const header1 = ["ระดับ", "สารเคมี", "วิธีการ", "กระบวนการ"];
   const data1 = [
     {
@@ -82,7 +81,7 @@ export default function Other1() {
           ซึ่งช่วยให้กระบวนการนี้มีความเป็นระบบมากยิ่งขึ้น ดังนี้
         </p>
         <Table header={header1} data={data1} />
-        <p className="pt-3">
+        <p>
           ระดับ 1: เปลี่ยนเฉพาะสารที่ใช้ แต่วิธีการ และกระบวนการยังคงเดิม
           <br />
           ระดับ 2: เปลี่ยนทั้งสารและวิธีการ แต่กระบวนการยังคงเหมือนเดิม
@@ -135,9 +134,7 @@ export default function Other1() {
           ซึ่งการกำจัดนี้อาจเกิดขึ้นในระดับใดระดับหนึ่งจากสามระดับที่กำหนดไว้
         </p>
       </div>
-      <h3 className="titleH3 mb-2">
-        1. นิยามของการทดแทนในบริบทการจัดการสารเคมีอันตราย
-      </h3>
+      <h3 className="titleH3 mb-2">2. กระบวนการทำงานของการทดแทน</h3>
       <div className="Content">
         <p>
           <T />
@@ -291,7 +288,7 @@ export default function Other1() {
           รายละเอียดผลิตภัณฑ์ งาน และการสัมผัสสาร
         </p>
         <h3 className="titleH3 mb-2">2.1.1 รายละเอียดของผลิตภัณฑ์</h3>
-        <p className="titleH3">
+        <p className="font-bold">
           <T />
           2.1.1.1 ข้อมูลของผลิตภัณฑ์
         </p>
@@ -312,7 +309,7 @@ export default function Other1() {
           หากองค์ประกอบของผลิตภัณฑ์ไม่ชัดเจน
           จะไม่สามารถประเมินผลิตภัณฑ์ได้อย่างเหมาะสม
         </p>
-        <p className="titleH3">
+        <p className="font-bold">
           <T />
           2.1.1.2 ผลกระทบทางพิษวิทยาและสุขภาพ
         </p>
@@ -328,7 +325,7 @@ export default function Other1() {
           สิ่งที่ควรพิจารณาคือ:
           มีข้อมูลเกี่ยวกับผลกระทบที่ก่อความระคายเคืองต่อสุขภาพของผลิตภัณฑ์หรือไม่?
         </p>
-        <p className="titleH3">
+        <p className="font-bold">
           <T />
           2.1.1.3 ผลกระทบต่อสุขภาพในสถานการณ์จริง
         </p>
@@ -358,7 +355,7 @@ export default function Other1() {
           </li>
         </ul>
         <h3 className="titleH3 mb-2">2.1.2 รายละเอียดของการดำเนินงาน</h3>
-        <p className="titleH3">
+        <p className="font-bold">
           <T />
           2.1.2.1 วัตถุประสงค์ของกระบวนการทำงาน
         </p>
@@ -372,7 +369,7 @@ export default function Other1() {
           ควรหลีกเลี่ยงการยึดติดกับแนวทางเดิม เช่น การตั้งคำถามว่า
           "จำเป็นต้องขจัดคราบน้ำมันหรือไม่?"
         </p>
-        <p className="titleH3">
+        <p className="font-bold">
           <T />
           2.1.2.2 ความเชื่อมโยงกับส่วนอื่น ๆ ของงาน
         </p>
@@ -384,7 +381,7 @@ export default function Other1() {
           การทดแทนสารเคมีในแต่ละขั้นตอนควรพิจารณาเป็นส่วนหนึ่งของภาพรวมทั้งหมดของสายการผลิต
           โดยเป้าหมายคือการลดความเสี่ยงด้านสุขภาพในภาพรวม
         </p>
-        <p className="titleH3">
+        <p className="font-bold">
           <T />
           2.1.2.3 รายละเอียดของการดำเนินงาน
         </p>
