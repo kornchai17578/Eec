@@ -20,6 +20,7 @@ import List12 from "@/data/guidelines/List12";
 import Other1 from "@/data/guidelines/Other1";
 import Other2 from "@/data/guidelines/Other2";
 import Other3 from "@/data/guidelines/Other3";
+import { Row, Col } from "antd";
 
 export default function SustainableChemistryGuidelines() {
   const principles = [
@@ -83,16 +84,26 @@ export default function SustainableChemistryGuidelines() {
 
         {/* Content Section */}
         <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4">
-          <div className="flex justify-between mb-3">
-            <div className="contentHeader">
-              <img src="/icons/file.svg" alt="flame" className="contentIcon" />
-              <h2 className="TitleContent">แนวคิดของเคมีสีเขียว</h2>
-            </div>
-            <DownloadButton
-              href="/docs/guideline.pdf"
-              label="ดาวน์โหลดเอกสารแนวทาง"
-            />
-          </div>
+          <Row className="mb-3">
+            <Col span={24} sm={12}>
+              <div className="contentHeader">
+                <img
+                  src="/icons/file.svg"
+                  alt="flame"
+                  className="contentIcon"
+                />
+                <h2 className="TitleContent">แนวคิดของเคมีสีเขียว</h2>
+              </div>
+            </Col>
+            <Col span={24} sm={12}>
+              <div className="sm:text-end">
+                <DownloadButton
+                  href="/docs/guideline.pdf"
+                  label="ดาวน์โหลดเอกสารแนวทาง"
+                />
+              </div>
+            </Col>
+          </Row>
           <div className="Content">
             <p>
               <T />
