@@ -1,6 +1,7 @@
 import Titile from "@/components/Titile";
 import ChemicalConverter from "./components/ChemicalConverter";
 import { chemicalOptions } from "@/data/chemicalOptions";
+import T from "@/components/T";
 
 export default async function RelatedTechnologies() {
   return (
@@ -19,11 +20,23 @@ export default async function RelatedTechnologies() {
         </section>
         <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4">
           <div className="Content">
-            <h3 className="titleH3 mb-2">Why this alternative?</h3>
+            <h3 className="titleH3 mb-2">
+              อัตราความเสี่ยงจากไอระเหย (Vapor Hazard Ratio: VHR):
+            </h3>
             <p>
-              Ethanol เป็นทางเลือกที่ดีกว่า Methanol อย่างมาก เนื่องจากมีค่า VHR
-              ต่ำกว่า 74% และมีความปลอดภัยต่อสุขภาพมากกว่า แนะนำให้ใช้ Ethanol
-              แทน Methanol ในกระบวนการผลิต
+              เป็นการวัดความเสี่ยงที่เกี่ยวข้องกับการสูดดมไอระเหยของสารเคมี
+              โดยเปรียบเทียบความเข้มข้นของไอระเหยกับค่าเกณฑ์จำกัดการสัมผัส
+              เพื่อประเมินระดับอันตราย
+            </p>
+            <p>
+              <T />
+              เมื่อค่า TLV ทำหน้าที่เป็นเพียง “ดัชนีทางพิษวิทยา” (toxicological
+              index) เท่านั้น VHR (Vapor Hazard Ratio)
+              จะสะท้อนความน่าจะเป็นในการที่ความเข้มข้นของสารเคมีในอากาศจะเกินค่า
+              TLV โดยใน VHR
+              จะคำนึงถึงพฤติกรรมของสารเคมีที่แตกต่างกันในสภาวะแวดล้อมการทำงาน
+              กล่าวคือ ความสามารถในการระเหยของสารเคมีแต่ละชนิดมีความแตกต่างกัน
+              ซึ่งส่งผลโดยตรงต่อ
             </p>
           </div>
         </section>

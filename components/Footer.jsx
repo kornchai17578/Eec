@@ -61,9 +61,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/about-us">
-              เกี่ยวกับเรา
-              </Link>
+              <Link href="/whats-new">What's New?</Link>
             </li>
           </ul>
         </nav>

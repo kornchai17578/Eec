@@ -98,7 +98,7 @@ export default function SustainableChemistryGuidelines() {
             <Col span={24} sm={12}>
               <div className="sm:text-end">
                 <DownloadButton
-                  href="/docs/guideline.pdf"
+                  href="/docs/แนวทางเคมียั่งยืน Rev.01.pdf"
                   label="ดาวน์โหลดเอกสารแนวทาง"
                 />
               </div>

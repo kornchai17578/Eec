@@ -403,12 +403,12 @@ export default function Header() {
 
           <li>
             <Link
-              href="/about-us"
+              href="/whats-new"
               className={`${styles.nav__link} ${
-                isActive("/about-us") ? styles.isActive : ""
+                isActive("/whats-new") ? styles.isActive : ""
               }`}
             >
-              เกี่ยวกับเรา
+              What's New?
             </Link>
           </li>
         </ul>

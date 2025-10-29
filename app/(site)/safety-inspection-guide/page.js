@@ -24,9 +24,7 @@ export default function SafetyInspectionGuide() {
               </div>
 
               <div className="Content my-auto">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
+                คู่มือการตรวจสอบความปลอดภัยสารเคมี
               </div>
 
               <div className="mt-auto pt-4">
@@ -49,15 +47,36 @@ export default function SafetyInspectionGuide() {
               </div>
 
               <div className="Content my-auto">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
+                แบบตรวจประเมินการจัดการสารเคมี
               </div>
 
               <div className="mt-auto pt-4">
                 <DownloadButton
-                  href="/docs/guideline.pdf"
+                  href="/docs/แบบตรวจประเมินความปลอดภัยในการจัดการสารเคมี.pdf"
                   label="แบบตรวจประเมินการจัดการสารเคมี"
+                />
+              </div>
+            </section>
+          </Col>
+          <Col span={24} md={12}>
+            <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4 h-full flex flex-col">
+              <div className="contentHeader">
+                <img
+                  src="/icons/file.svg"
+                  alt="flame"
+                  className="contentIcon"
+                />
+                <h3 className="titleH3 mb-2">แบบตรวจประเมินเคมียั่งยืน (Sustainable Chemistry)</h3>
+              </div>
+
+              <div className="Content my-auto">
+                แบบตรวจประเมินเคมียั่งยืน
+              </div>
+
+              <div className="mt-auto pt-4">
+                <DownloadButton
+                  href="/docs/แบบตรวจประเมิน Sustainable Chemistry.pdf"
+                  label="แบบตรวจประเมินเคมียั่งยืน"
                 />
               </div>
             </section>
