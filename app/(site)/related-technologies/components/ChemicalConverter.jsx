@@ -1,9 +1,7 @@
 "use client";
 import { useState, useMemo, useEffect, useRef } from "react";
 import { Select, Card } from "antd";
-import dynamic from "next/dynamic";
-
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 
 export default function ChemicalConverter({ options = [] }) {
   const [from, setFrom] = useState(null);

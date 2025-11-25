@@ -3,8 +3,7 @@ import Titile from "@/components/Titile";
 import styles from "./Home.module.css";
 import { Row, Col } from "antd";
 import DownloadButton from "@/components/buttons/DownloadButton";
-import dynamic from "next/dynamic";
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 
 export default function Home() {
   return (

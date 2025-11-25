@@ -4,9 +4,7 @@ import DownloadButton from "@/components/buttons/DownloadButton";
 import GuidelineAccordion from "./components/GuidelineAccordion";
 import "./components/GuidelineAccordion.css";
 import T from "@/components/T";
-import dynamic from "next/dynamic";
-
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 
 import List1 from "@/data/guidelines/List1";
 import List2 from "@/data/guidelines/List2";

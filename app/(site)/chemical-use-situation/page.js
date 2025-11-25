@@ -1,9 +1,7 @@
 // app/(site)/chemical-use-situation/page.js
 import { Row, Col } from "antd";
 import DownloadButton from "@/components/buttons/DownloadButton";
-import dynamic from "next/dynamic";
-
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 import AccidentTable from "./components/AccidentTable";
 import ChemicalLeakChart from "./components/ChemicalLeakChart";
 import Top10HazardChart from "./components/Top10HazardChart";

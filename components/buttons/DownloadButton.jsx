@@ -1,8 +1,6 @@
 "use client";
-import dynamic from "next/dynamic";
+import Icons from "@/components/Icons";
 import styles from "./Button.module.css";
-
-const Icons = dynamic(() => import("@/components/Icons"));
 
 export default function DownloadButton({
   label = "ดาวน์โหลดเอกสารแนวทาง",

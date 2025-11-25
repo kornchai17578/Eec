@@ -2,9 +2,7 @@
 import DownloadButton from "@/components/buttons/DownloadButton";
 import Titile from "@/components/Titile";
 import { Row, Col } from "antd";
-import dynamic from "next/dynamic";
-
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 
 export default function SafetyInspectionGuide() {
   return (

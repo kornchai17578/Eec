@@ -1,7 +1,5 @@
 import Link from "next/link";
-import dynamic from "next/dynamic";
-
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 
 export default async function WelcomeScreen() {
   return (

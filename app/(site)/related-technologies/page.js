@@ -1,8 +1,6 @@
 import Titile from "@/components/Titile";
 import ChemicalConverter from "./components/ChemicalConverter";
-import dynamic from "next/dynamic";
-
-const Icons = dynamic(() => import("@/components/Icons"));
+import Icons from "@/components/Icons";
 import { chemicalOptions } from "@/data/chemicalOptions";
 import T from "@/components/T";
 
