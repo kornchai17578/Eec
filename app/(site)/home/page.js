@@ -110,14 +110,18 @@ export default function Home() {
               รวม 391 โรงงาน อยู่ใน
             </p>
             <p>
-              จังหวัดฉะเชิงเทรา จํานวน <span className="num">67</span>{" "} โรงงาน <br/> 
-              จังหวัดชลบุรี จํานวน{" "}<span className="num">199</span> โรงงาน <br/>
-              และจังหวัดระยอง จํานวน <span className="num"> 125 </span> โรงงาน <br/>
+              จังหวัดฉะเชิงเทรา จํานวน <span className="num">67</span> โรงงาน{" "}
+              <br />
+              จังหวัดชลบุรี จํานวน <span className="num">199</span> โรงงาน{" "}
+              <br />
+              และจังหวัดระยอง จํานวน <span className="num">
+                {" "}
+                125{" "}
+              </span> โรงงาน <br />
             </p>
             <p>
-              มูลค่าเงินลงทุนรวม <span className="num">55,777</span>{" "}
-              ล้านบาท จํานวนคนงานรวม <span className="num">17,363</span>{" "}
-              คน
+              มูลค่าเงินลงทุนรวม <span className="num">55,777</span> ล้านบาท
+              จํานวนคนงานรวม <span className="num">17,363</span> คน
             </p>
             <p>
               การนําแนวคิดการจัดการเคมียั่งยืน (Sustainable Chemistry)
@@ -139,11 +143,7 @@ export default function Home() {
 
         <Col span={20} md={20} lg={10}>
           <div className="aboutImageBox">
-            <img
-              src="/images/about.png"
-              alt="about"
-              className="aboutImg"
-            />
+            <img src="/images/about.png" alt="about" className="aboutImg" />
           </div>
         </Col>
       </Row>
@@ -161,11 +161,7 @@ export default function Home() {
           className="rounded md:rounded-xl bg-[#F6F7F9] p-4"
         >
           <div className="contentHeader">
-            <img
-              src="/icons/marker.svg"
-              alt="marker"
-              className="contentIcon"
-            />
+            <img src="/icons/marker.svg" alt="marker" className="contentIcon" />
             <h2 className="TitleContent">วัตถุประสงค์</h2>
           </div>
 

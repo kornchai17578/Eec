@@ -66,12 +66,12 @@ export default function SafetyInspectionGuide() {
                   alt="flame"
                   className="contentIcon"
                 />
-                <h3 className="titleH3 mb-2">แบบตรวจประเมินเคมียั่งยืน (Sustainable Chemistry)</h3>
+                <h3 className="titleH3 mb-2">
+                  แบบตรวจประเมินเคมียั่งยืน (Sustainable Chemistry)
+                </h3>
               </div>
 
-              <div className="Content my-auto">
-                แบบตรวจประเมินเคมียั่งยืน
-              </div>
+              <div className="Content my-auto">แบบตรวจประเมินเคมียั่งยืน</div>
 
               <div className="mt-auto pt-4">
                 <DownloadButton
