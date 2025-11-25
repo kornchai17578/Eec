@@ -4,6 +4,9 @@ import DownloadButton from "@/components/buttons/DownloadButton";
 import GuidelineAccordion from "./components/GuidelineAccordion";
 import "./components/GuidelineAccordion.css";
 import T from "@/components/T";
+import dynamic from "next/dynamic";
+
+const Icons = dynamic(() => import("@/components/Icons"));
 
 import List1 from "@/data/guidelines/List1";
 import List2 from "@/data/guidelines/List2";
@@ -87,9 +90,10 @@ export default function SustainableChemistryGuidelines() {
           <Row className="mb-3">
             <Col span={24} sm={12}>
               <div className="contentHeader">
-                <img
-                  src="/icons/file.svg"
-                  alt="flame"
+                <Icons
+                  name="file"
+                  color="#1173A9"
+                  size="24px"
                   className="contentIcon"
                 />
                 <h2 className="TitleContent">แนวคิดของเคมีสีเขียว</h2>

@@ -1,5 +1,9 @@
 // app/(site)/chemical-use-situation/page.js
 import { Row, Col } from "antd";
+import DownloadButton from "@/components/buttons/DownloadButton";
+import dynamic from "next/dynamic";
+
+const Icons = dynamic(() => import("@/components/Icons"));
 import AccidentTable from "./components/AccidentTable";
 import ChemicalLeakChart from "./components/ChemicalLeakChart";
 import Top10HazardChart from "./components/Top10HazardChart";
@@ -37,12 +41,19 @@ export default function ChemicalUseSituation() {
     <div className="gradient-bg">
       <div className="container mx-auto px-6 py-4">
         <Titile title="สถานการณ์การใช้สารเคมี" />
-
-        {/* Title */}
-        <div className="contentHeader">
-          <img src="/icons/flame.svg" alt="flame" className="contentIcon" />
-          <h2 className="TitleContent">อุบัติเหตุในประเทศไทย</h2>
-        </div>
+        <Row className="mb-3">
+          <Col span={24} sm={12}>
+            <div className="contentHeader">
+              <Icons
+                name="flame"
+                color="#1173A9"
+                size="24px"
+                className="contentIcon"
+              />
+              <h2 className="TitleContent">สถานการณ์การใช้สารเคมี</h2>
+            </div>
+          </Col>
+        </Row>
 
         {/* Content Section */}
         <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4">

@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Titile from "@/components/Titile";
 import styles from "./Home.module.css";
 import { Row, Col } from "antd";
+import DownloadButton from "@/components/buttons/DownloadButton";
 import dynamic from "next/dynamic";
 const Icons = dynamic(() => import("@/components/Icons"));
 
@@ -88,12 +90,13 @@ export default function Home() {
       >
         <Col span={20} md={20} lg={10}>
           <div className="contentHeader">
-            <img
-              src="/icons/hourglass.svg"
-              alt="hourglass"
+            <Icons
+              name="hourglass"
+              color="#1173A9"
+              size="24px"
               className="contentIcon"
             />
-            <h2 className="TitleContent">ความเป็นมา</h2>
+            <h2 className="TitleContent">สถานการณ์การใช้สารเคมี</h2>
           </div>
 
           <div className="Content">
@@ -161,8 +164,13 @@ export default function Home() {
           className="rounded md:rounded-xl bg-[#F6F7F9] p-4"
         >
           <div className="contentHeader">
-            <img src="/icons/marker.svg" alt="marker" className="contentIcon" />
-            <h2 className="TitleContent">วัตถุประสงค์</h2>
+            <Icons
+              name="marker"
+              color="#1173A9"
+              size="24px"
+              className="contentIcon"
+            />
+            <h2 className="TitleContent">ข้อมูลเครือข่ายท้องถิ่น</h2>
           </div>
 
           <div className="Content">

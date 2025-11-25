@@ -1,5 +1,8 @@
 import Titile from "@/components/Titile";
 import ChemicalConverter from "./components/ChemicalConverter";
+import dynamic from "next/dynamic";
+
+const Icons = dynamic(() => import("@/components/Icons"));
 import { chemicalOptions } from "@/data/chemicalOptions";
 import T from "@/components/T";
 
@@ -11,7 +14,12 @@ export default async function RelatedTechnologies() {
 
         <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4">
           <div className="contentHeader">
-            <img src="/icons/file.svg" alt="flame" className="contentIcon" />
+            <Icons
+              name="file"
+              color="#1173A9"
+              size="24px"
+              className="contentIcon"
+            />
             <h2 className="TitleContent">
               Chemical Converter - แปลงสารเคมีเป็นสารเคมียั่งยืน
             </h2>

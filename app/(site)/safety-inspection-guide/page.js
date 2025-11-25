@@ -2,6 +2,9 @@
 import DownloadButton from "@/components/buttons/DownloadButton";
 import Titile from "@/components/Titile";
 import { Row, Col } from "antd";
+import dynamic from "next/dynamic";
+
+const Icons = dynamic(() => import("@/components/Icons"));
 
 export default function SafetyInspectionGuide() {
   return (
@@ -13,9 +16,10 @@ export default function SafetyInspectionGuide() {
           <Col span={24} md={12}>
             <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4 h-full flex flex-col">
               <div className="contentHeader">
-                <img
-                  src="/icons/file.svg"
-                  alt="flame"
+                <Icons
+                  name="file"
+                  color="#1173A9"
+                  size="24px"
                   className="contentIcon"
                 />
                 <h3 className="titleH3 mb-2">
@@ -38,9 +42,10 @@ export default function SafetyInspectionGuide() {
           <Col span={24} md={12}>
             <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4 h-full flex flex-col">
               <div className="contentHeader">
-                <img
-                  src="/icons/file.svg"
-                  alt="flame"
+                <Icons
+                  name="file"
+                  color="#1173A9"
+                  size="24px"
                   className="contentIcon"
                 />
                 <h3 className="titleH3 mb-2">แบบตรวจประเมินการจัดการสารเคมี</h3>
@@ -61,9 +66,10 @@ export default function SafetyInspectionGuide() {
           <Col span={24} md={12}>
             <section className="rounded md:rounded-xl bg-[#F6F7F9] p-4 mb-4 h-full flex flex-col">
               <div className="contentHeader">
-                <img
-                  src="/icons/file.svg"
-                  alt="flame"
+                <Icons
+                  name="file"
+                  color="#1173A9"
+                  size="24px"
                   className="contentIcon"
                 />
                 <h3 className="titleH3 mb-2">

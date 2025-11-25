@@ -1,4 +1,7 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const Icons = dynamic(() => import("@/components/Icons"));
 
 export default async function WelcomeScreen() {
   return (
@@ -16,7 +19,7 @@ export default async function WelcomeScreen() {
 
         <Link href="/home" className="button">
           เข้าสู่เว็บไซต์
-          <img src="/icons/arrow.svg" alt="arrow" className="logo" />
+          <Icons name="arrow" color="#fff" size="24px" />
         </Link>
       </div>
     </main>
